@@ -1,7 +1,7 @@
-declare namespace types {
-    type Player = {
+declare namespace app {
+    export type Player = {
         name: string,
         score: number
     };
-    type Option = string;
+    export type Option = string;
 }
