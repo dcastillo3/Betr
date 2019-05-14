@@ -13,10 +13,15 @@
     "typescript": "3.4.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/index.js",
+    "start-react": "react-scripts start",
+    "start-server": "npm run server",
+    "start-mac": "react-scripts start & nodemon server/index.js",
+    "deploy": "bash script/deploy",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon server/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
